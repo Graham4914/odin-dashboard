@@ -3,11 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dashboard Panel</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Another project</h1>
+    <div class="dashboard">
+      <aside class="sidebar">
+        <!-- Sidebar content -->
+        <header>
+          <div class="logo">
+            <div class="grid-square top-left"></div>
+            <div class="grid-square top-right"></div>
+            <div class="grid-square bottom-left"></div>
+            <div class="grid-square bottom-right"></div>
+          </div>
+          <h1 class="dashboard-title">Dashboard</h1>
+        </header>
+
+        <nav class="navigation">
+          <!-- Navigation links like Home, Profile, etc. -->
+          <ul>
+            <li>
+              <a href="#">
+                <svg class="icon">
+                  <use href="icons.svg#icon-home"></use>
+                </svg>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="icon">
+                  <use href="icons.svg#icon-profile"></use>
+                </svg>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="icon">
+                  <use href="icons.svg#icon-messages"></use>
+                </svg>
+                <span>Messages</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="icon">
+                  <use href="icons.svg#icon-history"></use>
+                </svg>
+                <span>History</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="icon">
+                  <use href="icons.svg#icon-tasks"></use>
+                </svg>
+                <span>Tasks</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="icon">
+                  <use href="icons.svg#icon-community"></use>
+                </svg>
+                <span>Communities</span>
+              </a>
+            </li>
+          </ul>
+          <div class="sidebar-divider"></div>
+          <ul>
+            <li>
+              <a href="#">
+                <svg class="icon">
+                  <use href="icons.svg#icon-settings"></use>
+                </svg>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="icon">
+                  <use href="icons.svg#icon-support"></use>
+                </svg>
+                <span>Support</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="icon">
+                  <use href="icons.svg#icon-privacy"></use>
+                </svg>
+                <span>privacy</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="main-content">
+        <header class="main-header">
+          <!-- Main header content like search, user info, and main action buttons -->
+        </header>
+
+        <div class="content-area">
+          <section class="projects">
+            <!-- Project cards -->
+          </section>
+          <section class="announcements">
+            <!-- Announcements list -->
+          </section>
+          <section class="trending">
+            <!-- Trending section -->
+          </section>
+        </div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
