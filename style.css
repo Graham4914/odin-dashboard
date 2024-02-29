@@ -1,73 +1,149 @@
  /* CSS Reset */
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+ *,
+ *::before,
+ *::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
 
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-}
-.icon {
-    height: 30px;
-    fill: aqua;
-    
-}
-ul   {
-    list-style: none;
-}
+ html {
+     font-size: 16px;
+     /* base sise for using rem units */
+ }
 
-.sidebar {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    background-color: #007bff;
-}
-.logo {
-    display: grid;
-    grid-template-columns:repeat(2, 1fr);
-    grid-template-rows: 1fr 2fr 1fr;
-    gap: 5px;
-    justify-self: start;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    
-    background-color: #007bff;
-}
+ /*Main Grid layout*/
+ .dashboard {
+     display: grid;
+     grid-template-columns: 250px 1fr;
+     grid-template-rows: auto 1fr;
+     /* gap: 1rem; */
+     height: 100vh;
+ }
 
-.dashboard-title {
-    color: white;
-    justify-self: start;
-    grid-row: 1;
-}
+ .main-header {
+     grid-column: 1 / 2;
+     grid-row: 1;
+     background-color: bisque;
+ }
 
-.grid-square {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-}
+ #sidebar {
+     grid-column: 1 / 2;
+     grid-row: 2;
+ }
 
-.top-left {
-    grid-column: 1;
-    grid-row: 1 /  3;
-  }
-  
-  .top-right {
-    grid-column: 2;
-    grid-row: 1;
-  }
-  
-  .bottom-left {
-    grid-column: 1;
-    grid-row: 3;
-  }
-  
-  .bottom-right {
-    grid-column: 2;
-    grid-row: 2 /span 2;
-  }
+ .sidebar {
+     display: flex;
+     flex-direction: column;
+     background-color: #007bff;
+ }
+
+ .navigation ul li {
+     display: flex;
+
+     align-items: center;
+     font-size: 1.5rem;
+     margin-top: .5rem;
+
+
+ }
+
+
+ .main-content {
+     grid-column: 2;
+     grid-row: 2;
+
+ }
+
+
+ .navigation a {
+     text-decoration: none;
+     color: white;
+     display: flex;
+     align-items: center;
+     width: 100%;
+     margin-top: .5rem;
+     font-size: 1.5rem;
+     gap: 10px;
+
+
+ }
+
+
+
+
+ /*Fonts*/
+ h2 {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 15px;
+ }
+
+ /*icons*/
+ .sidebar .icon {
+     height: 1.5rem;
+     fill: white;
+     width: 1.5rem;
+
+ }
+
+
+ .search-icon .icon {
+     height: 2rem;
+ }
+
+ .notification-bell .icon {
+     height: 2rem;
+ }
+
+ ul {
+     list-style: none;
+     margin-left: 1.8rem;
+
+     justify-content: center;
+ }
+
+ .projects .icon {
+     height: 1.5rem;
+     width: 1.5rem;
+
+ }
+
+ .favorite,
+ .view,
+ .share {
+     background: none;
+     border: none;
+     cursor: pointer;
+ }
+
+ aside header {
+     display: flex;
+ }
+
+ aside nav {
+     display: flex;
+     flex-direction: column;
+     gap: 50px;
+ }
+
+
+ /* logo and design */
+ .logo .icon {
+
+     width: 50px;
+     height: 50px;
+
+
+
+
+
+ }
+
+
+
+ .dashboard-title {
+     padding: 1rem;
+     color: white;
+     text-align: center;
+
+ }

@@ -1,126 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard Panel</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="dashboard">
-      <aside class="sidebar">
-        <!-- Sidebar content -->
-        <header>
-          <div class="logo">
-            <div class="grid-square top-left"></div>
-            <div class="grid-square top-right"></div>
-            <div class="grid-square bottom-left"></div>
-            <div class="grid-square bottom-right"></div>
-          </div>
-          <h1 class="dashboard-title">Dashboard</h1>
-        </header>
 
-        <nav class="navigation">
-          <!-- Navigation links like Home, Profile, etc. -->
-          <ul>
-            <li>
-              <a href="#">
-                <svg class="icon">
-                  <use href="icons.svg#icon-home"></use>
-                </svg>
-                <span>Home</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="icon">
-                  <use href="icons.svg#icon-profile"></use>
-                </svg>
-                <span>Profile</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="icon">
-                  <use href="icons.svg#icon-messages"></use>
-                </svg>
-                <span>Messages</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="icon">
-                  <use href="icons.svg#icon-history"></use>
-                </svg>
-                <span>History</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="icon">
-                  <use href="icons.svg#icon-tasks"></use>
-                </svg>
-                <span>Tasks</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="icon">
-                  <use href="icons.svg#icon-community"></use>
-                </svg>
-                <span>Communities</span>
-              </a>
-            </li>
-          </ul>
-          <div class="sidebar-divider"></div>
-          <ul>
-            <li>
-              <a href="#">
-                <svg class="icon">
-                  <use href="icons.svg#icon-settings"></use>
-                </svg>
-                <span>Settings</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="icon">
-                  <use href="icons.svg#icon-support"></use>
-                </svg>
-                <span>Support</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="icon">
-                  <use href="icons.svg#icon-privacy"></use>
-                </svg>
-                <span>privacy</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </aside>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-      <div class="main-content">
-        <header class="main-header">
-          <!-- Main header content like search, user info, and main action buttons -->
-        </header>
-
-        <div class="content-area">
-          <section class="projects">
-            <!-- Project cards -->
-          </section>
-          <section class="announcements">
-            <!-- Announcements list -->
-          </section>
-          <section class="trending">
-            <!-- Trending section -->
-          </section>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar" id="sidebar">
+      <!-- Sidebar content -->
+      <header>
+        <div class="logo">
+          <svg class="icon">
+            <use href="icons.svg#icon-logo"></use>
+          </svg>
         </div>
+        <div class="dashboard-title">
+          <h1>Dashboard</h1>
+        </div>
+      </header>
+
+      <nav class="navigation">
+        <!-- Navigation links -->
+        <ul>
+          <li>
+            <a href="#">
+              <svg class="icon">
+                <use href="icons.svg#icon-home"></use>
+              </svg>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="icon">
+                <use href="icons.svg#icon-profile"></use>
+              </svg>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="icon">
+                <use href="icons.svg#icon-messages"></use>
+              </svg>
+              <span>Messages</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="icon">
+                <use href="icons.svg#icon-history"></use>
+              </svg>
+              <span>History</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="icon">
+                <use href="icons.svg#icon-tasks"></use>
+              </svg>
+              <span>Tasks</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="icon">
+                <use href="icons.svg#icon-community"></use>
+              </svg>
+              <span>Communities</span>
+            </a>
+          </li>
+        </ul>
+        <div class="sidebar-divider"></div>
+        <ul>
+          <li>
+            <a href="#">
+              <svg class="icon">
+                <use href="icons.svg#icon-settings"></use>
+              </svg>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="icon">
+                <use href="icons.svg#icon-support"></use>
+              </svg>
+              <span>Support</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="icon">
+                <use href="icons.svg#icon-privacy"></use>
+              </svg>
+              <span>privacy</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <div class="main-content">
+      <header class="main-header">
+        <!-- Main header content including search, user info, and main action buttons -->
+        <div class="search-container">
+          <button class="search-icon">
+            <svg class="icon">
+              <use href="icons.svg#icon-search"></use>
+            </svg>
+          </button>
+          <input type="search" placeholder="Search">
+        </div>
+
+        <div class="user-info">
+          <!--user avatar-->
+          <img src="Images/avatar5small.jpg" alt="User-avatar" class="user-avatar">
+          <span>Hi there,</span>
+          <strong>Penny Farthing (@Pennny)</strong>
+        </div>
+
+        <div class="notifications">
+          <button class="notification-bell">
+            <svg class="icon">
+              <use href="icons.svg#icon-notification"></use>
+            </svg>
+          </button>
+          <img src="Images/avatar5small.jpg" alt="User-avatar" class="user-avatar">
+          <strong class="user-name-secondary">Penny Farthing</strong>
+        </div>
+
+        <div class="action-buttons">
+          <!--buttons for new,upload and share-->
+          <button class="btn new">New</button>
+          <button class="btn upload">Upload</button>
+          <button class="btn share">Share</button>
+        </div>
+      </header>
+
+      <div class="content-area">
+        <section class="projects">
+          <!-- Project cards -->
+          <h2>Your Projects</h2>
+          <div class="super-cool-project">
+            <h3>Super Cool Project</h3>
+            <p>
+              This is some random placemakker text for my super cool projects
+              and all the bokes, they will have three icons at the bottom for
+              favorties, view and share!
+            </p>
+            <div class="project-card-icons">
+              <button class="favorite" aria-label="Add to favorites">
+                <svg class="icon" aria-hidden="true">
+                  <use href="icons.svg#icon-favorite"></use>
+                </svg>
+              </button>
+              <button class="view" aria-label="View Project">
+                <svg class="icon" aria-hidden="true">
+                  <use href="icons.svg#icon-view"></use>
+                </svg>
+              </button>
+              <button class="share" aria-label="Share project">
+                <svg class="icon" aria-hidden="true">
+                  <use href="icons.svg#icon-share"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="impossible-app">
+            <h3>Impossible App</h3>
+            <p>
+              This is some random placemakker text for my super cool projects
+              and all the bokes, they will have three icons at the bottom for
+              favorties, view and share!
+            </p>
+            <div class="project-card-icons">
+              <button class="favorite" aria-label="Add to favorites">
+                <svg class="icon" aria-hidden="true">
+                  <use href="icons.svg#icon-favorite"></use>
+                </svg>
+              </button>
+              <button class="view" aria-label="View Project">
+                <svg class="icon" aria-hidden="true">
+                  <use href="icons.svg#icon-view"></use>
+                </svg>
+              </button>
+              <button class="share" aria-label="Share project">
+                <svg class="icon" aria-hidden="true">
+                  <use href="icons.svg#icon-share"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="add-blocker">
+            <h3>Ad Blocker</h3>
+            <p>
+              This is some random placemakker text for my super cool projects
+              and all the bokes, they will have three icons at the bottom for
+              favorties, view and share!
+            </p>
+            <div class="project-card-icons">
+              <button class="favorite" aria-label="Add to favorites">
+                <svg class="icon" aria-hidden="true">
+                  <use href="icons.svg#icon-favorite"></use>
+                </svg>
+              </button>
+              <button class="view" aria-label="View Project">
+                <svg class="icon" aria-hidden="true">
+                  <use href="icons.svg#icon-view"></use>
+                </svg>
+              </button>
+              <button class="share" aria-label="Share project">
+                <svg class="icon" aria-hidden="true">
+                  <use href="icons.svg#icon-share"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="less-cool-project">
+            <h3>Less Cool Project</h3>
+            <p>
+              This is some random placemakker text for my super cool projects
+              and all the bokes, they will have three icons at the bottom for
+              favorties, view and share!
+            </p>
+            <div class="project-card-icons">
+              <button class="favorite" aria-label="Add to favorites">
+                <svg class="icon" aria-hidden="true">
+                  <use href="icons.svg#icon-favorite"></use>
+                </svg>
+              </button>
+              <button class="view" aria-label="View Project">
+                <svg class="icon" aria-hidden="true">
+                  <use href="icons.svg#icon-view"></use>
+                </svg>
+              </button>
+              <button class="share" aria-label="Share project">
+                <svg class="icon" aria-hidden="true">
+                  <use href="icons.svg#icon-share"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="easy-peasy-app">
+            <h3>Easy Peasy App</h3>
+            <p>
+              This is some random placemakker text for my super cool projects
+              and all the bokes, they will have three icons at the bottom for
+              favorties, view and share!
+            </p>
+            <div class="project-card-icons">
+              <button class="favorite" aria-label="Add to favorites">
+                <svg class="icon" aria-hidden="true">
+                  <use href="icons.svg#icon-favorite"></use>
+                </svg>
+              </button>
+              <button class="view" aria-label="View Project">
+                <svg class="icon" aria-hidden="true">
+                  <use href="icons.svg#icon-view"></use>
+                </svg>
+              </button>
+              <button class="share" aria-label="Share project">
+                <svg class="icon" aria-hidden="true">
+                  <use href="icons.svg#icon-share"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="money-maker">
+            <h3>Money Maker</h3>
+            <p>
+              This is some random placemakker text for my super cool projects
+              and all the bokes, they will have three icons at the bottom for
+              favorties, view and share!
+            </p>
+            <div class="project-card-icons">
+              <button class="favorite" aria-label="Add to favorites">
+                <svg class="icon" aria-hidden="true">
+                  <use href="icons.svg#icon-favorite"></use>
+                </svg>
+              </button>
+              <button class="view" aria-label="View Project">
+                <svg class="icon" aria-hidden="true">
+                  <use href="icons.svg#icon-view"></use>
+                </svg>
+              </button>
+              <button class="share" aria-label="Share project">
+                <svg class="icon" aria-hidden="true">
+                  <use href="icons.svg#icon-share"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="announcements-section">
+          <!-- Announcements list -->
+          <h2>Announcements</h2>
+          <article class="announcements">
+            <h3>Site Maintainence</h3>
+            <p>
+              Site maintainence is critical to making sure your website is
+              allways operating properly and any issues are found and fixed
+              before a user has to send a message about there bad experience!
+            </p>
+          </article>
+          <article class="community-share-day">
+            <h3>Community Share Day</h3>
+            <p>
+              Community share day is coming, get ready for a fantastic event
+              where perople actually share things! look forward to an amazing
+              day with experts in the field of sharing - demostrating how not
+              to be scrooge!
+            </p>
+          </article>
+          <article class="updated-privacy-policy">
+            <h3>Updated Privacy Policy</h3>
+            <p>
+              Yes thats right... Privacy matters and we aim to keep your data
+              safe from anyone who want to use it without authorisation.
+              please ready the updated policy its only 4000 words.
+            </p>
+          </article>
+        </section>
+
+        <section class="trending">
+          <!-- Trending section -->
+          <h2>Trending</h2>
+          <div class="trending-list">
+            <ul>
+              <li>
+                <a href="/user/tegan">
+                  <img src="Images/avatar1small.jpg" alt="Tegans Avatar" class="user-avatar">
+                  <div>
+                    <span class="username">@tegan</span>
+                    <span class="user-project">World Peace Builder</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/user/penny">
+                  <img src="Images/avatar5small.jpg" alt="Pennys Avatar" class="user-avatar">
+                  <div>
+                    <span class="username">@penny</span>
+                    <span class="user-project">Super Cool Project</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/user/kendal">
+                  <img src="Images/avatar2small.jpg" alt="Kendals Avatar" class="user-avatar">
+                  <div>
+                    <span class="username">@kendal</span>
+                    <span class="user-project">Life Changing App</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/user/alex">
+                  <img src="Images/avatar4small.jpg" alt="Alexs Avatar" class="user-avatar">
+                  <div>
+                    <span class="username">@alex</span>
+                    <span class="user-project">No Trafic Maker</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
     </div>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
