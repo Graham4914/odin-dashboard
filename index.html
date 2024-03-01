@@ -10,8 +10,7 @@
 
 <body>
   <div class="dashboard">
-    <aside class="sidebar" id="sidebar">
-      <!-- Sidebar content -->
+    <aside class="sidebar" id="sidebar"><!-- Sidebar content -->
       <header>
         <div class="logo">
           <svg class="icon">
@@ -23,8 +22,8 @@
         </div>
       </header>
 
+      <!-- Navigation links -->
       <nav class="navigation">
-        <!-- Navigation links -->
         <ul>
           <li>
             <a href="#">
@@ -106,8 +105,7 @@
     </aside>
 
     <div class="main-content">
-      <header class="main-header">
-        <!-- Main header content including search, user info, and main action buttons -->
+      <header class="main-header"><!-- Main header content including search, user info, and main action buttons -->
         <div class="search-container">
           <button class="search-icon">
             <svg class="icon">
@@ -120,8 +118,10 @@
         <div class="user-info">
           <!--user avatar-->
           <img src="Images/avatar5small.jpg" alt="User-avatar" class="user-avatar">
-          <span>Hi there,</span>
-          <strong>Penny Farthing (@Pennny)</strong>
+          <div class="user-info-heading">
+            <span>Hi there,</span>
+            <strong>Penny Farthing (@Pennny)</strong>
+          </div>
         </div>
 
         <div class="notifications">
@@ -134,16 +134,21 @@
           <strong class="user-name-secondary">Penny Farthing</strong>
         </div>
 
+        <!--buttons for new,upload and share-->
         <div class="action-buttons">
-          <!--buttons for new,upload and share-->
           <button class="btn new">New</button>
           <button class="btn upload">Upload</button>
-          <button class="btn share">Share</button>
+          <button class="btn header-share">Share</button>
         </div>
       </header>
 
+
+
+
       <div class="content-area">
         <section class="projects">
+
+
           <!-- Project cards -->
           <h2>Your Projects</h2>
           <div class="super-cool-project">
@@ -298,6 +303,9 @@
           </div>
         </section>
         <section class="announcements-section">
+
+
+
           <!-- Announcements list -->
           <h2>Announcements</h2>
           <article class="announcements">
@@ -328,6 +336,9 @@
         </section>
 
         <section class="trending">
+
+
+
           <!-- Trending section -->
           <h2>Trending</h2>
           <div class="trending-list">

@@ -12,6 +12,15 @@
      /* base sise for using rem units */
  }
 
+
+ /*Fonts*/
+ h2 {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 15px;
+ }
+
+
+
  /*Main Grid layout*/
  .dashboard {
      display: grid;
@@ -21,38 +30,91 @@
      height: 100vh;
  }
 
+
+ /*main header layout*/
  .main-header {
      grid-column: 1 / 2;
      grid-row: 1;
      background-color: bisque;
+     /*inner Grid*/
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+
+
  }
 
- #sidebar {
+ .user-info {
      grid-column: 1 / 2;
-     grid-row: 2;
+     grid-row: 2 / 3;
+     /*inner Grid*/
+     display: grid;
+     grid-template-columns: 1fr 3fr;
+     padding: 10px 0;
  }
 
- .sidebar {
+ .user-info img {
+     margin-left: 1rem;
+
+ }
+
+ .user-info-heading {
+     align-self: center;
+     display: grid;
+     justify-content: start;
+
+ }
+
+ .user-info span,
+ strong {
+     grid-column: 2;
+     align-self: center;
+ }
+
+ .action-buttons {
+     align-self: center;
      display: flex;
-     flex-direction: column;
-     background-color: #007bff;
+     justify-content: space-around;
+     margin-right: 2rem;
+     gap: 1rem;
  }
 
- .navigation ul li {
-     display: flex;
-
-     align-items: center;
-     font-size: 1.5rem;
-     margin-top: .5rem;
-
-
+ .new,
+ .upload,
+ .header-share {
+     padding: 3px;
+     width: 4rem;
  }
+
+
 
 
  .main-content {
      grid-column: 2;
      grid-row: 2;
+ }
 
+
+
+ .sidebar {
+     display: flex;
+     flex-direction: column;
+     background-color: #007bff;
+     /* Grid Tracks*/
+     grid-column: 1 / 2;
+     grid-row: 2;
+ }
+
+ .navigation ul li {
+     display: flex;
+     align-items: center;
+     font-size: 1.5rem;
+     margin-top: .5rem;
+ }
+
+ ul {
+     list-style: none;
+     margin-left: 1.8rem;
+     justify-content: center;
  }
 
 
@@ -66,17 +128,11 @@
      font-size: 1.5rem;
      gap: 10px;
 
-
  }
 
 
 
 
- /*Fonts*/
- h2 {
-     font-family: Arial, Helvetica, sans-serif;
-     font-size: 15px;
- }
 
  /*icons*/
  .sidebar .icon {
@@ -86,21 +142,16 @@
 
  }
 
-
  .search-icon .icon {
-     height: 2rem;
+     height: 1.5rem;
+     width: 1.5rem;
  }
 
  .notification-bell .icon {
-     height: 2rem;
+     height: 1.5rem;
+     width: 1.5rem;
  }
 
- ul {
-     list-style: none;
-     margin-left: 1.8rem;
-
-     justify-content: center;
- }
 
  .projects .icon {
      height: 1.5rem;
@@ -110,7 +161,9 @@
 
  .favorite,
  .view,
- .share {
+ .share,
+ .search-icon,
+ .notification-bell {
      background: none;
      border: none;
      cursor: pointer;
@@ -127,23 +180,28 @@
  }
 
 
- /* logo and design */
+ /* logo and design and heading */
  .logo .icon {
-
      width: 50px;
      height: 50px;
-
-
-
-
-
  }
-
-
 
  .dashboard-title {
      padding: 1rem;
      color: white;
      text-align: center;
+ }
 
+ /*profile images*/
+
+ .user-avatar {
+     border-radius: 50%;
+     width: 2.8rem;
+     height: 2.8rem;
+     border: 1px solid black;
+ }
+
+ .user-info img {
+     width: 4rem;
+     height: 4rem;
  }
