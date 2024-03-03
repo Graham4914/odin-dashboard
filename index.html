@@ -112,13 +112,14 @@
               <use href="icons.svg#icon-search"></use>
             </svg>
           </button>
-          <input type="search" placeholder="Search">
+          <input type="search" class="search-input" placeholder="Search">
         </div>
 
         <div class="user-info">
           <!--user avatar-->
           <img src="Images/avatar5small.jpg" alt="User-avatar" class="user-avatar">
           <div class="user-info-heading">
+
             <span>Hi there,</span>
             <strong>Penny Farthing (@Pennny)</strong>
           </div>
@@ -152,12 +153,13 @@
           <!-- Project cards -->
           <h2>Your Projects</h2>
           <div class="super-cool-project">
-            <h3>Super Cool Project</h3>
-            <p>
-              This is some random placemakker text for my super cool projects
-              and all the bokes, they will have three icons at the bottom for
-              favorties, view and share!
-            </p>
+            <div class="project-card-content">
+              <h3>Super Cool Project</h3>
+              <p>
+                This project is so cool, it makes the Arctic look like a sauna. We're building a social network
+                exclusively for penguins. It's all the buzz from the iceberg to the igloo. Icebreakers included!
+              </p>
+            </div>
             <div class="project-card-icons">
               <button class="favorite" aria-label="Add to favorites">
                 <svg class="icon" aria-hidden="true">
@@ -177,12 +179,15 @@
             </div>
           </div>
           <div class="impossible-app">
-            <h3>Impossible App</h3>
-            <p>
-              This is some random placemakker text for my super cool projects
-              and all the bokes, they will have three icons at the bottom for
-              favorties, view and share!
-            </p>
+            <div class="project-card-content">
+              <h3>Impossible App</h3>
+              <p>
+                Welcome to the Impossible App, where tasks self-destruct in five seconds.
+                Your mission, should you choose to accept it, involves coding in the dark, with nothing but your wits
+                and a single candle.
+
+              </p>
+            </div>
             <div class="project-card-icons">
               <button class="favorite" aria-label="Add to favorites">
                 <svg class="icon" aria-hidden="true">
@@ -202,12 +207,15 @@
             </div>
           </div>
           <div class="add-blocker">
-            <h3>Ad Blocker</h3>
-            <p>
-              This is some random placemakker text for my super cool projects
-              and all the bokes, they will have three icons at the bottom for
-              favorties, view and share!
-            </p>
+            <div class="project-card-content">
+              <h3>Ad Blocker</h3>
+              <p>
+                Ad Blocker masquerades as a tempting "Buy One, Get One Free" deal but
+                secretly shields your family from those flashy 'must-have' ads.
+                It's the art of saving by not showing, keeping both bank accounts and relationships blissfully unaware
+                of what they're missing out on.
+              </p>
+            </div>
             <div class="project-card-icons">
               <button class="favorite" aria-label="Add to favorites">
                 <svg class="icon" aria-hidden="true">
@@ -227,12 +235,15 @@
             </div>
           </div>
           <div class="less-cool-project">
-            <h3>Less Cool Project</h3>
-            <p>
-              This is some random placemakker text for my super cool projects
-              and all the bokes, they will have three icons at the bottom for
-              favorties, view and share!
-            </p>
+            <div class="project-card-content">
+              <h3>Less Cool Project</h3>
+              <p>
+                In a world of overheating gadgets, the Less Cool Project brings a sizzling twist.
+                This app harnesses the heat from your tirelessly working devices, channeling those extra degrees
+                straight into a personal foot spa heater.
+                Why waste the warmth when your feet can bask in a toasty treat after a long day?
+              </p>
+            </div>
             <div class="project-card-icons">
               <button class="favorite" aria-label="Add to favorites">
                 <svg class="icon" aria-hidden="true">
@@ -252,12 +263,16 @@
             </div>
           </div>
           <div class="easy-peasy-app">
-            <h3>Easy Peasy App</h3>
-            <p>
-              This is some random placemakker text for my super cool projects
-              and all the bokes, they will have three icons at the bottom for
-              favorties, view and share!
-            </p>
+            <div class="project-card-content">
+              <h3>Easy Peasy App</h3>
+              <p>
+                Caught in a jam? Don't sweat it! Easy Peasy App is your go-to for crafting the most convincing
+                diversions when you need to deflect blame.
+                With a tap, conjure up airtight alibis and intricate explanations that gently shift accountability away
+                from you.
+                It's like having a 'get out of jail free' card in your pocket.
+              </p>
+            </div>
             <div class="project-card-icons">
               <button class="favorite" aria-label="Add to favorites">
                 <svg class="icon" aria-hidden="true">
@@ -277,12 +292,16 @@
             </div>
           </div>
           <div class="money-maker">
-            <h3>Money Maker</h3>
-            <p>
-              This is some random placemakker text for my super cool projects
-              and all the bokes, they will have three icons at the bottom for
-              favorties, view and share!
-            </p>
+            <div class="project-card-content">
+              <h3>Money Maker</h3>
+              <p>
+                While the world busies itself with AI, we've gone a step further – embracing 'I', the pinnacle of
+                individual intelligence.
+                Our recent breakthrough in quantum behaviorism unlocks the potential for 'I' technology, a platform
+                where intelligence isn't artificial; it's personalized.
+                Invest in 'I' – where your capital grows.
+              </p>
+            </div>
             <div class="project-card-icons">
               <button class="favorite" aria-label="Add to favorites">
                 <svg class="icon" aria-hidden="true">
@@ -302,86 +321,90 @@
             </div>
           </div>
         </section>
-        <section class="announcements-section">
 
 
-
-          <!-- Announcements list -->
+        <div class="right-panel">
           <h2>Announcements</h2>
-          <article class="announcements">
-            <h3>Site Maintainence</h3>
-            <p>
-              Site maintainence is critical to making sure your website is
-              allways operating properly and any issues are found and fixed
-              before a user has to send a message about there bad experience!
-            </p>
-          </article>
-          <article class="community-share-day">
-            <h3>Community Share Day</h3>
-            <p>
-              Community share day is coming, get ready for a fantastic event
-              where perople actually share things! look forward to an amazing
-              day with experts in the field of sharing - demostrating how not
-              to be scrooge!
-            </p>
-          </article>
-          <article class="updated-privacy-policy">
-            <h3>Updated Privacy Policy</h3>
-            <p>
-              Yes thats right... Privacy matters and we aim to keep your data
-              safe from anyone who want to use it without authorisation.
-              please ready the updated policy its only 4000 words.
-            </p>
-          </article>
-        </section>
-
-        <section class="trending">
+          <section class="announcements-section">
 
 
 
+            <!-- Announcements list -->
+
+            <article class="announcements">
+              <h3>Site Maintainence</h3>
+              <p>
+                Site maintainence is critical to making sure your website is
+                allways operating properly and any issues are found and fixed
+                before a user has to send a message about their bad experience!
+              </p>
+            </article>
+            <div class="divider"></div>
+            <article class="community-share-day">
+              <h3>Community Share Day</h3>
+              <p>
+                Community share day is coming, get ready for a fantastic event
+                where people actually share things! look forward to an amazing
+                day with experts in the field of sharing - demostrating how not
+                to be scrooge!
+              </p>
+            </article>
+            <div class="divider"></div>
+            <article class="updated-privacy-policy">
+              <h3>Updated Privacy Policy</h3>
+              <p>
+                Yes thats right... Privacy matters and we aim to keep your data
+                safe from anyone who want to use it without authorisation.
+                please read the updated policy its only 4000 words with no spaces.
+              </p>
+            </article>
+          </section>
           <!-- Trending section -->
           <h2>Trending</h2>
-          <div class="trending-list">
-            <ul>
-              <li>
-                <a href="/user/tegan">
-                  <img src="Images/avatar1small.jpg" alt="Tegans Avatar" class="user-avatar">
-                  <div>
-                    <span class="username">@tegan</span>
-                    <span class="user-project">World Peace Builder</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="/user/penny">
-                  <img src="Images/avatar5small.jpg" alt="Pennys Avatar" class="user-avatar">
-                  <div>
-                    <span class="username">@penny</span>
-                    <span class="user-project">Super Cool Project</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="/user/kendal">
-                  <img src="Images/avatar2small.jpg" alt="Kendals Avatar" class="user-avatar">
-                  <div>
-                    <span class="username">@kendal</span>
-                    <span class="user-project">Life Changing App</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="/user/alex">
-                  <img src="Images/avatar4small.jpg" alt="Alexs Avatar" class="user-avatar">
-                  <div>
-                    <span class="username">@alex</span>
-                    <span class="user-project">No Trafic Maker</span>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+          <section class="trending">
+
+            <div class="trending-list">
+              <ul>
+                <li>
+                  <a href="/user/tegan">
+                    <img src="Images/avatar1small.jpg" alt="Tegans Avatar" class="user-avatar">
+                    <div>
+                      <span class="username">@tegan</span>
+                      <span class="user-project">World Peace Builder</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/user/penny">
+                    <img src="Images/avatar5small.jpg" alt="Pennys Avatar" class="user-avatar">
+                    <div>
+                      <span class="username">@penny</span>
+                      <span class="user-project">Super Cool Project</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/user/kendal">
+                    <img src="Images/avatar2small.jpg" alt="Kendals Avatar" class="user-avatar">
+                    <div>
+                      <span class="username">@kendal</span>
+                      <span class="user-project">Life Changing App</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/user/alex">
+                    <img src="Images/avatar4small.jpg" alt="Alexs Avatar" class="user-avatar">
+                    <div>
+                      <span class="username">@alex</span>
+                      <span class="user-project">No Trafic Maker</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   </div>
